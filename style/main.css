@@ -1,0 +1,68 @@
+
+:root{
+    --vermelho: #E50914; /* cores declaradas */
+    --preta: #141414;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Elementos Base  */
+body {
+    background: var(--preta);
+    font-family: 'Times New Roman', Times, serif;
+    color: #fff;
+
+    
+}
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+
+}
+
+header .logo{
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: 'Arial Black', times;
+    font-size: 40px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 10px;
+
+}
+header nav a:hover{
+    color: #fff;
+}
+
+/* Coisar Relacionadas ao filme principal */
+.filme-principal{
+    font-size:20px; /*tamanho*/
+    background:linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%) /* colaca um filtro fino sobre a img */, url(/Clonando-a-NETFLIX-DIO/img/Capa01.jpg); /* colocando img */
+    height:400px; /*tamanha da img*/
+    background-size:cover; /* ajusta a img*/
+    display:flex; /* joga os elemestos em linha*/
+    flex-direction:column; /*joga os elementos em colunas*/
+    justify-content:center; /* joga os elementos para o centro */
+    align-items: flex-start;
+}
+.titulo{
+    font-size: 40px;
+}
+.subtitulo{
+    font-size: 16px;
+}
+.descricao{
+    margin-bottom: 20px;
+    font-size: 13px;
+}
