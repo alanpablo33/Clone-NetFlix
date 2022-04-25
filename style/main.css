@@ -46,23 +46,67 @@ header nav a:hover{
 }
 
 /* Coisar Relacionadas ao filme principal */
+/*filme principal*/
 .filme-principal{
-    font-size:20px; /*tamanho*/
-    background:linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%) /* colaca um filtro fino sobre a img */, url(/Clonando-a-NETFLIX-DIO/img/Capa01.jpg); /* colocando img */
-    height:400px; /*tamanha da img*/
-    background-size:cover; /* ajusta a img*/
-    display:flex; /* joga os elemestos em linha*/
-    flex-direction:column; /*joga os elementos em colunas*/
-    justify-content:center; /* joga os elementos para o centro */
+    font-size:16px;
+    background:linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50) 100%), url(/img/capa02.jpg);
+
+    height:400px;
+    background-size:cover;
+ 
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: flex-start;
 }
 .titulo{
+    margin-top: 15%;
     font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .subtitulo{
     font-size: 16px;
 }
 .descricao{
+    margin-top: 10px;
     margin-bottom: 20px;
     font-size: 13px;
+}
+
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border: nome;
+    color: #fff;
+
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.container{
+    margin-left: 20px;
+}
+.filme-principal .container{
+    width: 70%;
+}
+.botao:hover{
+    background-color: #fff;
+    color: black;
+}
+.botao i{
+    margin-right: 8px;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+    cursor: pointer;
+}
+.carrosel-filmes{
+    margin-top:5px;
 }
